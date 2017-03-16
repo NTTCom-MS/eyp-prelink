@@ -4,9 +4,9 @@
 #
 class prelink::config inherits prelink {
 
-  if($manage_package)
+  if($prelink::manage_package)
   {
-    if ($package_ensure=='installed')
+    if ($prelink::package_ensure=='installed')
     {
       $file_ensure = 'present'
     }
